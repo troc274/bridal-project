@@ -1,0 +1,124 @@
+extends _layout/layout_2
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Khai báo các mixin
+block body
+	section.slide__product
+		.container
+			.row
+				.col-12
+					.swiper-container.product__slide
+						.swiper-wrapper
+							.swiper-slide
+								img.img-fluid(src="./img/bridal-shop-background.jpg", alt="")
+							.swiper-slide
+								img.img-fluid(src="./img/bridal-shop-slide-2-background.jpg", alt="")
+							.swiper-slide
+								img.img-fluid(src="./img/bridal-shop-slide-3-background.jpg", alt="")
+						.swiper-button-next
+							span.mr-1 NEXT
+							img.button-next(src="./img/next-button.png", alt="")
+						.swiper-button-prev
+							img.button-prev.mr-1(src="./img/prev-button.png", alt="")
+							span BACK
+						.swiper-pagination
+	section.all__products
+		.container
+			.row
+				.col-12
+					.title__all__product
+						h2.m-0 Váy cưới nổi bật
+						img.flower__title(src="./img/flower-line.png", alt="" )
+				.col-12
+					.row
+						.col-md-6.col-lg-3.col-sm-12
+							.product-item
+								figure.content
+									.show-img
+										img.img-fluid(src="./img/shop-product-1.jpg", alt="")
+										.view-detail
+											a(href="#").m-0 Xem chi tiết
+									figcaption
+										h5.pt-3.pb-2.m-0.name-product lowdin glusen
+										span.price-product 3.000.000 VNĐ
+						.col-md-6.col-lg-3.col-sm-12
+							.product-item
+								figure.content
+									.show-img
+										img.img-fluid(src="./img/shop-product-2.jpg", alt="")
+										.view-detail
+											a(href="#").m-0 Xem chi tiết
+									figcaption
+										h5.pt-3.pb-2.m-0.name-product lowdin glusen
+										span.price-product 3.000.000 VNĐ
+						.col-md-6.col-lg-3.col-sm-12
+							.product-item
+								figure.content
+									.show-img
+										img.img-fluid(src="./img/shop-product-3.jpg", alt="")
+										.view-detail
+											a(href="#").m-0 Xem chi tiết
+										.sale-product
+											p.m-0 Sale
+									figcaption
+										h5.pt-3.pb-2.m-0.name-product lowdin glusen
+										span.price-product 3.000.000 VNĐ
+						.col-md-6.col-lg-3.col-sm-12
+							.product-item
+								figure.content
+									.show-img
+										img.img-fluid(src="./img/shop-product-4.jpg", alt="")
+										.view-detail
+											a(href="#").m-0 Xem chi tiết
+									figcaption
+										h5.pt-3.pb-2.m-0.name-product lowdin glusen
+										span.price-product 3.000.000 VNĐ
+						.col-md-6.col-lg-3.col-sm-12
+							.product-item
+								figure.content
+									.show-img
+										img.img-fluid(src="./img/shop-product-5.jpg", alt="")
+										.view-detail
+											a(href="#").m-0 Xem chi tiết
+									figcaption
+										h5.pt-3.pb-2.m-0.name-product lowdin glusen
+										span.price-product 3.000.000 VNĐ
+						.col-md-6.col-lg-3.col-sm-12
+							.product-item
+								figure.content
+									.show-img
+										img.img-fluid(src="./img/shop-product-6.jpg", alt="")
+										.view-detail
+											a(href="#").m-0 Xem chi tiết
+										.sale-product
+											p.m-0 Sale
+									figcaption
+										h5.pt-3.pb-2.m-0.name-product lowdin glusen
+										span.price-product 3.000.000 VNĐ
+						.col-md-6.col-lg-3.col-sm-12
+							.product-item
+								figure.content
+									.show-img
+										img.img-fluid(src="./img/shop-product-7.jpg", alt="")
+										.view-detail
+											a(href="#").m-0 Xem chi tiết
+									figcaption
+										h5.pt-3.pb-2.m-0.name-product lowdin glusen
+										span.price-product 3.000.000 VNĐ
+						.col-md-6.col-lg-3.col-sm-12
+							.product-item
+								figure.content
+									.show-img
+										img.img-fluid(src="./img/shop-product-8.jpg", alt="")
+										.view-detail
+											a(href="#").m-0 Xem chi tiết
+										.sale-product
+											p.m-0 Sale
+									figcaption
+										h5.pt-3.pb-2.m-0.name-product lowdin glusen
+										span.price-product 3.000.000 VNĐ

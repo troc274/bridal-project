@@ -1,0 +1,69 @@
+footer
+	.footer-top
+		color: #7f7878
+		background: #e3e3e3
+		padding: 2rem 0
+		img 
+			width: 25%
+		.list-contact
+			display: flex
+			padding: 0
+			align-items: cente
+			li 
+				list-style-type: none
+				padding-right: .5rem 
+				a 
+					width: 30px
+					height: 30px
+					background: #d77c7c
+					border-radius: 50%
+					display: flex
+					justify-content: center
+					align-items: center
+					color: #fff
+					text-decoration: none
+					transition: .3s ease-in-out
+					&:hover
+						background: #fff
+						color: #d77c7c
+						border: 1px solid #d77c7c
+		h5
+			text-transform: uppercase
+			font-weight: 200
+			color: #7f7878
+		.link
+			padding: 0
+			+media-breakpoint-down(md)
+				margin-bottom: 1.5rem
+			li
+				list-style-type: none
+				line-height: 30px
+				a 
+					color: #7f7878
+					text-decoration: none
+		.form-contact-mail
+			position: relative
+			input
+				border-radius: 50px
+				padding: 0 4rem 0 2rem
+			button
+				position: absolute
+				top: 50%
+				right: 3px
+				transform: translateY(-50%)
+				border: none
+				background: #d77c7c
+				padding: .3rem .7rem
+				border-radius: 50px
+				color: #fff
+				text-transform: uppercase
+				transition: .3s ease-in-out
+				font-weight: 500
+		ul
+			margin: 0
+	.copyright
+		background: #d6d3d3
+		padding: .7rem 0
+		p 
+			color: #808080
+			text-align: center

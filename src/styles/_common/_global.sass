@@ -1,0 +1,44 @@
+@font-face
+	font-family: "EllaFutura"
+	src: url(../fonts/elle-futura-book.otf)
+
+@font-face
+	font-family: "CandleScript"
+	src: url(../fonts/SVN-Vanilla-Daisy-Pro.ttf)
+
+html, body
+	font-family: "EllaFutura"
+	font-size: 14.5px
+	height: 100%
+	width: 100%
+
+// Extend
+.home-title-total
+	text-align: center
+
+	.home-about-us-title
+		color: #d77c7c
+		font-family: CandleScript
+		font-size: 3rem
+		margin: 0
+	.home-about-us-img-title
+		padding: 1rem 0
+		+media-breakpoint-only(xl)
+			width: 19%
+			padding: 2rem 0
+		+media-breakpoint-only(lg)
+			width: 22%
+			padding: 2rem 0
+		+media-breakpoint-only(md)
+			width: 30%
+		+media-breakpoint-only(sm)
+			width: 40%
+		+media-breakpoint-down(sm)
+			width: 45%
+
+// Actived
+.actived
+	color: $white
+	background-color: $pink-opacity
+.hide-element
+	display: none
