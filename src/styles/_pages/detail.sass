@@ -1,0 +1,302 @@
+.first-page
+	.back-link
+		padding-top: 1rem
+		display: flex
+		text-transform: uppercase
+		font-size: .8rem
+		align-items: center
+		justify-content: flex-start
+		p 
+			margin: 0
+		a
+			color: #100f0f
+			padding-right: .8rem
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				width: 1px
+				height: 100%
+				background: #100f0f
+				top: 50%
+				right: 4px
+				transform: translateY(-50%)
+	.name-shop
+		text-transform: uppercase
+		display: flex
+		align-items: flex-end
+		padding: 1rem 0
+		h1,h3
+			margin: 0
+		h1
+			+media-breakpoint-down(sm)
+				font-size: 2rem
+		h3
+			+media-breakpoint-down(sm)
+				font-size: 1.5rem
+.detail-product
+	padding-bottom: 3rem
+	.image-product
+		border: 1px solid #000000
+	.show-more-albums
+		padding-bottom: 2rem
+		.swiper-button-next,.swiper-button-prev
+			background-image: none
+			top: 100%
+			outline: none
+		.swiper-button-prev
+			left: 48%
+			transform: translateX(-50%)
+		.swiper-button-next
+			right: 48%
+			transform: translateX(50%)
+	.content-detail
+		.name-product
+			color: #969696
+			margin: 0
+		.code-status
+			border-bottom: 1px solid #cbcbcb
+			padding: 1rem 0
+			.status
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					background: #cbcbcb
+					height: 90%
+					width: 1px
+					top: 50%
+					right: .7rem
+					transform: translateY(-50%)
+					display: flex
+					justify-content: center
+					align-items: center
+				p 
+					span
+						color: #ff0000
+			p
+				margin: 0
+				span 
+					color: #cbcbcb
+		.price
+			padding-top: 2rem
+			margin: 0
+			text-transform: uppercase
+			color: #6a6a6a
+			span 
+				color: #000
+			.text-small
+				font-size: 1.1rem
+		.category
+			margin: 0
+			color: #6a6a6a
+			padding: .8rem 0
+			span 
+				color: #000
+		.share
+			display: flex
+			padding: 0 0 2rem 0
+			align-items: center
+			border-bottom: 1px solid #cbcbcb
+			h6
+				margin: 0
+				color: #6a6a6a
+			ul
+				display: flex
+				align-items: center
+				margin: 0
+				padding: 0 0rem 0 1rem
+				li 
+					list-style-type: none
+					padding-right: .5rem 
+					a 
+						width: 30px
+						height: 30px
+						background: #d77c7c
+						border-radius: 50%
+						display: flex
+						justify-content: center
+						align-items: center
+						color: #fff
+						text-decoration: none
+						transition: .3s ease-in-out
+						&:hover
+							background: #fff
+							color: #d77c7c
+							border: 1px solid #d77c7c
+						i
+							display: flex
+							justify-content: center
+							align-items: center
+		.size-detail
+			padding: 2rem 0 1rem 0
+			display: flex
+			align-items: center
+			justify-content: flex-start
+		.color-detail
+			padding: 1rem 0 2rem 0
+			display: flex
+			align-items: center
+			justify-content: flex-start
+		.label-custom-detail
+			color: #6a6a6a
+			border: 1px solid #6a6a6a
+			padding: .5rem 0
+			width: 30%
+			text-align: center
+			margin: 0
+		.select-custom-detail
+			padding: .5rem 0 .5rem 1rem
+			width: 70%
+			border-top: 1px solid #6a6a6a
+			border-right: 1px solid #6a6a6a
+			border-bottom: 1px solid #6a6a6a
+			border-left: none
+			outline: none
+			-webkit-appearance: none
+		.rating
+			display: flex
+			align-items: center
+			h5 
+				margin: 0
+				color: #6a6a6a
+				padding-right: 1rem
+			.list-rating
+				display: flex
+				align-items: center
+				margin: 0
+				padding: 0
+				li 
+					list-style-type: none
+		.comment
+			padding: 1rem 0
+			.top-comment
+				display: flex
+				justify-content: space-between
+				.sort
+					display: flex
+					align-items: center
+					h6 
+						color: #000
+						margin: 0
+					select
+						border-radius: 3px
+						background: #b9b9b9
+						option 
+							background: #fff
+			.main-comment
+				display: flex
+				align-items: flex-start
+				justify-content: space-between
+				img 
+					width: 15%
+				.comment
+					width: 84%
+					padding: 0
+					display: flex
+					flex-direction: column
+					textarea 
+						width: 100%
+						padding: .5rem
+					.post-comment
+						display: flex
+						justify-content: space-between
+						align-items: center
+						padding: .5rem 1rem
+						border-bottom: 1px solid #b9b9b9
+						border-right: 1px solid #b9b9b9
+						border-left: 1px solid #b9b9b9
+						.input-checkbox
+							label 
+								color: #b9b9b9
+						button
+							background: #5ca5d4
+							border: none
+							color: #ffffff
+							font-weight: 600
+							padding: .3rem 1rem
+							border-radius: 3px
+.heart-beautiful
+	height: 10px
+	background: #e5b9ca
+	display: flex
+	justify-content: center
+	align-items: center
+	.img-heart
+		width: 50px
+		height: 50px
+		background: #ff90c9
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		img
+			width: 20px
+.related-products
+	padding: 4rem 0
+	h3 
+		color: #737373
+		padding-bottom: 1rem
+	.products
+		padding: 2rem 0 1rem 0
+		border-top: 1px solid #b9b9b9
+		border-bottom: 1px solid #b9b9b9
+		a
+			text-decoration: none
+			figure
+				figcaption
+					background: #6fafaa
+					display: flex
+					align-items: center
+					justify-content: center
+					padding: 1rem 0
+					color: #fff
+					img 
+						width: 18px
+.thank-for-all
+	padding: 4rem 0
+	font-style: italic
+	border-bottom: 1px solid #b9b9b9
+	margin-bottom: 4rem
+	.img-logo 
+		position: relative
+		width: 100%
+		&:before
+			content: ''
+			position: absolute
+			width: 30%
+			height: 1px
+			background: #b9b9b9
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+		&:after
+			content: ''
+			position: absolute
+			width: 30%
+			height: 1px
+			background: #b9b9b9
+			right: 0
+			top: 50%
+			transform: translateY(-50%)
+		+media-breakpoint-up(md)
+			&:before
+				width: 40%
+			&:after
+				width: 40%
+		+media-breakpoint-up(lg)
+			&:before
+				width: 42%
+			&:after
+				width: 42%
+		+media-breakpoint-up(xl)
+			&:before
+				width: 44%
+			&:after
+				width: 44%
+	h1 
+		+media-breakpoint-down(sm)
+			font-size: 2rem
+	h3
+		+media-breakpoint-down(sm)
+			font-size: 1.3rem

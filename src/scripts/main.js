@@ -480,5 +480,17 @@ function sliderShowProduct() {
 		},
 	});
 }
+
+function sliderShowmoreDetail() {
+	var swiper = new Swiper('.slide-show-more-albums', {
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		slidesPerView: 3,
+		spaceBetween: 20,
+	});
+}
 sliderShowProduct();
+sliderShowmoreDetail();
 // -------------------------END SERVICE---------------------------------
