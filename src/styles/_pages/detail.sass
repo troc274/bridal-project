@@ -1,6 +1,8 @@
-.first-page
+.detail-product
+	padding-bottom: 3rem
+	background: #fafafa
 	.back-link
-		padding-top: 1rem
+		padding: 1rem 0
 		display: flex
 		text-transform: uppercase
 		font-size: .8rem
@@ -16,39 +18,22 @@
 				content: ''
 				position: absolute
 				width: 1px
-				height: 100%
+				height: 65%
 				background: #100f0f
 				top: 50%
 				right: 4px
 				transform: translateY(-50%)
-	.name-shop
-		text-transform: uppercase
-		display: flex
-		align-items: flex-end
-		padding: 1rem 0
-		h1,h3
-			margin: 0
-		h1
-			+media-breakpoint-down(sm)
-				font-size: 2rem
-		h3
-			+media-breakpoint-down(sm)
-				font-size: 1.5rem
-.detail-product
-	padding-bottom: 3rem
-	.image-product
-		border: 1px solid #000000
 	.show-more-albums
-		padding-bottom: 2rem
+		padding: 2rem 0
 		.swiper-button-next,.swiper-button-prev
 			background-image: none
 			top: 100%
 			outline: none
 		.swiper-button-prev
-			left: 48%
+			left: 45%
 			transform: translateX(-50%)
 		.swiper-button-next
-			right: 48%
+			right: 45%
 			transform: translateX(50%)
 	.content-detail
 		.name-product
@@ -57,6 +42,7 @@
 		.code-status
 			border-bottom: 1px solid #cbcbcb
 			padding: 1rem 0
+			font-weight: 600
 			.status
 				position: relative
 				&:before
@@ -81,7 +67,6 @@
 		.price
 			padding-top: 2rem
 			margin: 0
-			text-transform: uppercase
 			color: #6a6a6a
 			span 
 				color: #000
@@ -90,15 +75,13 @@
 		.category
 			margin: 0
 			color: #6a6a6a
-			padding: .8rem 0
+			padding: 1.5rem 0
 			span 
 				color: #000
 		.share
 			display: flex
-			padding: 0 0 2rem 0
 			align-items: center
-			border-bottom: 1px solid #cbcbcb
-			h6
+			h4
 				margin: 0
 				color: #6a6a6a
 			ul
@@ -112,7 +95,6 @@
 					a 
 						width: 30px
 						height: 30px
-						background: #d77c7c
 						border-radius: 50%
 						display: flex
 						justify-content: center
@@ -120,47 +102,61 @@
 						color: #fff
 						text-decoration: none
 						transition: .3s ease-in-out
-						&:hover
-							background: #fff
-							color: #d77c7c
-							border: 1px solid #d77c7c
+						&.bg-facebook
+							background: #6d6dff
+							&:hover
+								background: #fff
+								color: #6d6dff
+								border: 1px solid #6d6dff
+						&.bg-insta
+							background: linear-gradient(to bottom left, #f923b9, #e0db39)
+							&:hover
+								background: linear-gradient(to bottom left, #fff, #fff)
+								border: 1px solid darken(#e0db39, 10%)
+								i
+									background: linear-gradient(to bottom left, #f923b9, #e0db39)
+									-webkit-background-clip: text
+									-webkit-text-fill-color: transparent
+						&.bg-twitter
+							background: #6d6dff
+							&:hover
+								background: #fff
+								color: #6d6dff
+								border: 1px solid #6d6dff
 						i
 							display: flex
 							justify-content: center
 							align-items: center
-		.size-detail
-			padding: 2rem 0 1rem 0
-			display: flex
-			align-items: center
-			justify-content: flex-start
 		.color-detail
-			padding: 1rem 0 2rem 0
+			padding: 1rem 0
 			display: flex
 			align-items: center
-			justify-content: flex-start
-		.label-custom-detail
-			color: #6a6a6a
-			border: 1px solid #6a6a6a
-			padding: .5rem 0
-			width: 30%
-			text-align: center
-			margin: 0
-		.select-custom-detail
-			padding: .5rem 0 .5rem 1rem
-			width: 70%
-			border-top: 1px solid #6a6a6a
-			border-right: 1px solid #6a6a6a
-			border-bottom: 1px solid #6a6a6a
-			border-left: none
-			outline: none
-			-webkit-appearance: none
+			.label-custom-detail
+				margin: 0
+				color: #6a6a6a
+				font-size: 1.5rem
+				padding-right: .5rem
+			.select-custom-detail
+				background: none
+				border: none
+				outline: none
+				-webkit-appearance: none
+				font-size: 1.3rem
+				font-weight: 500
+				padding: 0.5rem 1rem
+			.color-option
+				width: 20px
+				height: 20px
+				border: 1px solid #000 
+				background: #fff
 		.rating
 			display: flex
 			align-items: center
+			border-bottom: 1px solid #cbcbcb
+			padding-bottom: 2rem
 			h5 
 				margin: 0
 				color: #6a6a6a
-				padding-right: 1rem
 			.list-rating
 				display: flex
 				align-items: center
@@ -168,94 +164,92 @@
 				padding: 0
 				li 
 					list-style-type: none
-		.comment
-			padding: 1rem 0
-			.top-comment
-				display: flex
-				justify-content: space-between
-				.sort
-					display: flex
-					align-items: center
-					h6 
-						color: #000
-						margin: 0
-					select
-						border-radius: 3px
-						background: #b9b9b9
-						option 
-							background: #fff
-			.main-comment
-				display: flex
-				align-items: flex-start
-				justify-content: space-between
-				img 
-					width: 15%
-				.comment
-					width: 84%
-					padding: 0
-					display: flex
-					flex-direction: column
-					textarea 
-						width: 100%
-						padding: .5rem
-					.post-comment
-						display: flex
-						justify-content: space-between
-						align-items: center
-						padding: .5rem 1rem
-						border-bottom: 1px solid #b9b9b9
-						border-right: 1px solid #b9b9b9
-						border-left: 1px solid #b9b9b9
-						.input-checkbox
-							label 
-								color: #b9b9b9
-						button
-							background: #5ca5d4
-							border: none
-							color: #ffffff
-							font-weight: 600
-							padding: .3rem 1rem
-							border-radius: 3px
-.heart-beautiful
+					padding: 0 .5rem
+.rose-flower
 	height: 10px
-	background: #e5b9ca
 	display: flex
 	justify-content: center
 	align-items: center
-	.img-heart
-		width: 50px
-		height: 50px
-		background: #ff90c9
-		border-radius: 50%
-		display: flex
-		justify-content: center
-		align-items: center
-		img
-			width: 20px
+	img 
+		width: 20%
+		+media-breakpoint-up(md)
+			width: 10%
+		+media-breakpoint-up(xl)
+			width: 5%
+.albums-detail
+	padding: 5rem 0 3rem 0
+	.title
+		h1 
+			font-family: CandleScript
+			color: #d77c7c
+			text-align: center
+			margin: 0
+	.album-items
+		margin: 0 auto
+		padding: 2rem 0
+		ul
+			padding: 0
+			li 
+				list-style-type: none
+		img 
+			width: 100%
+			border: 1px solid #fff
+			height: 114.98px
+			object-fit: cover
+			object-position: top left
+			+media-breakpoint-up(md)
+				height: 172.5px
+			+media-breakpoint-up(lg)
+				height: 155px
+			+media-breakpoint-up(xl)
+				height: 185px
+	.commitment
+		color: #b96d5b
 .related-products
+	background: #fafafa
 	padding: 4rem 0
-	h3 
-		color: #737373
-		padding-bottom: 1rem
+	@extend .home-title-total
+	.home-about-us-img-title
+		padding: 2rem 0
+		+media-breakpoint-only(xl)
+			width: 14.2%
+		+media-breakpoint-only(lg)
+			width: 19.35%
+		+media-breakpoint-only(md)
+			width: 22.28%
+		+media-breakpoint-down(sm)
+			width: 37.3%
+	h1
+		color: #d77c7c
+		margin: 0
+		font-family: CandleScript
 	.products
-		padding: 2rem 0 1rem 0
-		border-top: 1px solid #b9b9b9
-		border-bottom: 1px solid #b9b9b9
 		a
 			text-decoration: none
 			figure
+				.img-related
+					overflow: hidden
+					img 
+						transition: .3s ease-in-out
 				figcaption
-					background: #6fafaa
+					background: #ef8ca7
 					display: flex
 					align-items: center
-					justify-content: center
-					padding: 1rem 0
+					justify-content: space-between
+					padding: 1rem
 					color: #fff
+					h6 
+						margin: 0
+						text-transform: uppercase
+						span 
+							padding-left: .3rem
+							font-size: .7rem
+				&:hover
 					img 
-						width: 18px
+						transform: scale(1.2)
+						transition: .3s ease-in-out
 .thank-for-all
-	padding: 4rem 0
-	font-style: italic
+	padding: 3rem 0 4rem 0
 	border-bottom: 1px solid #b9b9b9
 	margin-bottom: 4rem
 	.img-logo 
@@ -295,6 +289,9 @@
 			&:after
 				width: 44%
 	h1 
+		font-family: CandleScript
+		padding: 1rem 0
+		margin: 0
 		+media-breakpoint-down(sm)
 			font-size: 2rem
 	h3

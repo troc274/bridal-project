@@ -10,6 +10,7 @@ module.exports = function (gulp, $, browserSync) {
 				'bower_components/photoswipe/dist/photoswipe.css',
 				'bower_components/photoswipe/dist/default-skin/default-skin.css',
 				'bower_components/swiper/dist/css/swiper.min.css',
+				'bower_components/lightgallery.js/dist/css/lightgallery.min.css',
 			])
 			.pipe($.concat('thuvien.css'))
 			.pipe(gulp.dest('./dist/css'));

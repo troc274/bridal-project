@@ -7,27 +7,19 @@ block variables
 	- var bodyclass = 'home'
 
 //- Khai báo các mixin
-block body
-	section.first-page
+block body	
+	section.detail-product
 		.container
 			.row
 				.col-12
 					.back-link
-						a(href="#") Bán hàng
-						a(href="#") Áo cưới
+						a(href="#") Banhang
+						a(href="#") Aocuoi
 						p 39283
-				.col-12
-					.name-shop
-						h1.pr-2 Rosy
-						h3 Bridal & Studio
-	section.detail-product
-		.container
-			.row
 				.col-12.col-md-6
 					.image-product
 						img.img-fluid(src="./img/detail-1.png", alt="")
 					.show-more-albums
-						h5 Xem thêm:
 						.slide-show-more-albums.swiper-container
 							.swiper-wrapper
 								.swiper-slide
@@ -61,29 +53,24 @@ block body
 						h4.category Category: 
 							span Áo cưới
 						.share.d-flex
-							h6 Chia sẻ:
+							h4 Chia sẻ:
 							ul
 								li
-									a(href="#")
+									a.bg-facebook(href="#")
 										i.fa.fa-facebook
 								li
-									a(href="#")
+									a.bg-insta(href="#")
 										i.fa.fa-instagram
 								li
-									a(href="#")
+									a.bg-twitter(href="#")
 										i.fa.fa-twitter
-						.size-detail
-							label.label-custom-detail(for="") Kích thước
-							select.select-custom-detail(name="")
-								option(value="") M
-								option(value="") M
-								option(value="") M
 						.color-detail
-							label.label-custom-detail(for="") Màu sắc
+							label.label-custom-detail(for="") Màu sắc:
 							select.select-custom-detail(name="")
-								option(value="") Trắng
-								option(value="") Hồng
-								option(value="") Vàng
+								option(value="white") Trắng
+								option(value="rose") Hồng
+								option(value="yellow") Vàng
+							.color-option
 						.rating
 							h5 Rating:
 							ul.list-rating
@@ -97,72 +84,104 @@ block body
 									img(src="./img/star-rating.png", alt="")
 								li
 									img(src="./img/star-rating.png", alt="")
-						.comment
-							.top-comment
-								h5 0 bình luận
-								.sort
-									h6.mr-1 Sắp xếp theo
-									select(name="")
-										option(value="") Mới nhất
-										option(value="") Mới nhất
-										option(value="") Mới nhất
-							.main-comment
-								img(src="./img/avt.png", alt="")
-								form.comment(action="")
-									textarea(name="", rows="3", placeholder="Thêm bình luận...")
-									.post-comment
-										.post-fb
-											.input-checkbox.d-flex.align-items-center
-												input.form-check.mr-1(type="checkbox", name="")
-												label.m-0(for="") Cũng đăng lên facebook
-											p.m-0.d-block Viết thêm 6 ký tự để đăng lên facebook
-										button(type="submit") Đăng
-	section.heart-beautiful
-		.img-heart
-			img(src="./img/heart.svg", alt="")
+	section.rose-flower
+		img(src="./img/rose-flower.png", alt="")
+	section.albums-detail
+		.container
+			.row
+				.col-12
+					.title
+						h1 Hình ảnh
+				.col-12
+					.album-items
+						ul.row.no-gutters#aniimated-thumbnials
+							li.col-4.col-md-3.col-lg-2(data-src="img/shop-product-1.jpg")
+								a(href)
+									img(src="img/shop-product-1.jpg", alt="")
+							li.col-4.col-md-3.col-lg-2(data-src="img/shop-product-2.jpg")
+								a(href)
+									img(src="img/shop-product-2.jpg", alt="")
+							li.col-4.col-md-3.col-lg-2(data-src="img/shop-product-3.jpg")
+								a(href)
+									img(src="img/shop-product-3.jpg", alt="")
+							li.col-4.col-md-3.col-lg-2(data-src="img/shop-product-4.jpg")
+								a(href)
+									img(src="img/shop-product-4.jpg", alt="")
+							li.col-4.col-md-3.col-lg-2(data-src="img/shop-product-5.jpg")
+								a(href)
+									img(src="img/shop-product-5.jpg", alt="")
+							li.col-4.col-md-3.col-lg-2(data-src="img/shop-product-6.jpg")
+								a(href)
+									img(src="img/shop-product-6.jpg", alt="")
+							li.col-4.col-md-3.col-lg-2(data-src="img/shop-product-7.jpg")
+								a(href)
+									img(src="img/shop-product-7.jpg", alt="")
+							li.col-4.col-md-3.col-lg-2(data-src="img/shop-product-8.jpg")
+								a(href)
+									img(src="img/shop-product-8.jpg", alt="")
+							li.col-4.col-md-3.col-lg-2(data-src="img/shop-product-9.jpg")
+								a(href)
+									img(src="img/shop-product-9.jpg", alt="")
+							li.col-4.col-md-3.col-lg-2(data-src="img/shop-product-10.jpg")
+								a(href)
+									img(src="img/shop-product-10.jpg", alt="")
+							li.col-4.col-md-3.col-lg-2(data-src="img/shop-product-11.jpg")
+								a(href)
+									img(src="img/shop-product-11.jpg", alt="")
+							li.col-4.col-md-3.col-lg-2(data-src="img/shop-product-12.jpg")
+								a(href)
+									img(src="img/shop-product-12.jpg", alt="")
+				.col-12 
+					.commitment.text-center
+						h5 Tất cả các hình được chụp tại Rosy Studio
+						h5 Đủ các loại áo cưới, kích cỡ và màu sắc
 	section.related-products
 		.container
 			.row
 				.col-12
-					h3.text-center Sản phẩm liên quan
+					h1.text-center Sản phẩm tương tự
+					div
+						img(src="./img/flower-line.png", alt="" class="home-about-us-img-title")
 				.col-12
 					.products
 						.row
 							.col-12.col-md-6.col-lg-3
 								a(href="#")
 									figure
-										img.w-100(src="./img/related-products-1.png", alt="")
-										figcaption 
-											img(src="./img/search-2.png", alt="")
-											p.m-0.pr-2.pl-2.price / Giá:
-												span 1.500.000 VNĐ
+										.img-related
+											img.w-100(src="./img/related-products-1.png", alt="")
+										figcaption
+											h6.name Nuayid
+											h6.price 1.500.000
+												span VNĐ
 							.col-12.col-md-6.col-lg-3
 								a(href="#")
 									figure
-										img.w-100(src="./img/related-products-2.png", alt="")
-										figcaption 
-											img(src="./img/search-2.png", alt="")
-											p.m-0.pr-2.pl-2.price / Giá:
-												span 1.500.000 VNĐ
+										.img-related
+											img.w-100(src="./img/related-products-2.png", alt="")
+										figcaption
+											h6.name Nuayid
+											h6.price 1.500.000
+												span VNĐ
 							.col-12.col-md-6.col-lg-3
 								a(href="#")
 									figure
-										img.w-100(src="./img/related-products-3.png", alt="")
-										figcaption 
-											img(src="./img/search-2.png", alt="")
-											p.m-0.pr-2.pl-2.price / Giá:
-												span 1.500.000 VNĐ
+										.img-related
+											img.w-100(src="./img/related-products-3.png", alt="")
+										figcaption
+											h6.name Nuayid
+											h6.price 1.500.000
+												span VNĐ
 							.col-12.col-md-6.col-lg-3
 								a(href="#")
 									figure
-										img.w-100(src="./img/related-products-4.png", alt="")
-										figcaption 
-											img(src="./img/search-2.png", alt="")
-											p.m-0.pr-2.pl-2.price / Giá:
-												span 1.500.000 VNĐ
-	section.heart-beautiful
-		.img-heart
-			img(src="./img/heart.svg", alt="")
+										.img-related
+											img.w-100(src="./img/related-products-4.png", alt="")
+										figcaption
+											h6.name Nuayid
+											h6.price 1.500.000
+												span VNĐ
+											
 	section.thank-for-all.text-center
 		.container
 			.row

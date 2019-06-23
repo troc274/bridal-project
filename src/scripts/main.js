@@ -493,4 +493,20 @@ function sliderShowmoreDetail() {
 }
 sliderShowProduct();
 sliderShowmoreDetail();
+function colorOption(){
+	$('.select-custom-detail').on('change', function() {
+		if ($($(this)).val() === "rose") {
+			$('.color-option').css('background', '#d77c7c');
+		}else if($($(this)).val() === "yellow"){
+			$('.color-option').css('background', '#ffdd99');
+		}else{
+			$('.color-option').css('background', '#fff');
+		}
+	  });	
+	
+}
+colorOption();
+lightGallery(document.getElementById('aniimated-thumbnials'), {
+    thumbnail:true
+}); 
 // -------------------------END SERVICE---------------------------------
